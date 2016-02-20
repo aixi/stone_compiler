@@ -1,4 +1,6 @@
-package stone;
+package stone.ast;
+
+import stone.tokenizer.Token;
 
 import java.io.IOException;
 

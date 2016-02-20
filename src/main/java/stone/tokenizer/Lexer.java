@@ -1,4 +1,6 @@
-package stone;
+package stone.tokenizer;
+
+import stone.ast.ParseException;
 
 import java.io.IOException;
 import java.io.LineNumberReader;

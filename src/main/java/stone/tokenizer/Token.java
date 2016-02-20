@@ -1,4 +1,4 @@
-package stone;
+package stone.tokenizer;
 
 import java.io.File;
 
