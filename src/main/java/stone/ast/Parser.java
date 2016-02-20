@@ -1,8 +1,7 @@
 package stone.ast;
 
-import stone.Lexer;
-import stone.ParseException;
-import stone.Token;
+import stone.tokenizer.Lexer;
+import stone.tokenizer.Token;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;

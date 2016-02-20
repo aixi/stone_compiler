@@ -1,4 +1,6 @@
-package stone;
+package stone.tokenizer;
+
+import stone.ast.ParseException;
 
 /**
  * Created by xi on 16-2-20.

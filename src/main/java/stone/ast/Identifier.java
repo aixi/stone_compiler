@@ -1,6 +1,6 @@
 package stone.ast;
 
-import stone.Token;
+import stone.tokenizer.Token;
 
 /**
  * Created by xi on 16-2-20.
