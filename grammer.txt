@@ -1,0 +1,16 @@
+Stone语言文法中的元符号
+{ pat }     <---->模式pat至少重复0次
+[pat]      <---->重复0或1次
+pat1 | pat2    <----> 与pat1或pat2匹配
+()     <----> 圆括号视为一个完整的模式
+"" <---->内为表示终结符 全大写单词也表示终结符
+
+primary---->"("exp ")" | NUMBER | IDENTIFIER | STRING
+factor---->"-"primary | primary
+exp---->factor{OP factor}
+block---->"{"[statement] { ( ";" | EOL) [statement] } "}"
+simple---->exp
+statement---->"if" exp block [ "else" block ]
+                | "while" exp block
+                | simple
+program---->[ statement ] (";" | EOL)
