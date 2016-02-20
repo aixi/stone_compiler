@@ -65,7 +65,7 @@ public class Lexer {
                 throw new ParseException("bad token at line: " + lineNo);
             }
         }
-        queue.add(new IdToken(lineNo, Token.EOL));
+        queue.add(new IdToken(lineNo, Token.EOL)); //之前的token已经在addToken中读取了现在添加每行的换行符
     }
 
     protected void addToken(int lineNo, Matcher matcher) {

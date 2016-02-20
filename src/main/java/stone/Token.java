@@ -1,11 +1,13 @@
 package stone;
 
+import java.io.File;
+
 /**
  * Created by xi on 16-2-20.
  */
 public class Token {
     public static final Token EOF = new Token(-1) {}; //end of file
-    public static final String EOL = System.getProperty("line.separator");
+    public static final String EOL = File.separator;
     private int lineNumber;
 
     protected Token(int lineNumber) {
