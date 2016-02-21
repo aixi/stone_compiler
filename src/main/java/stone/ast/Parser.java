@@ -156,7 +156,7 @@ public class Parser {
         protected void parse(Lexer lexer, List<ASTree> res) throws ParseException {
             while (parser.match(lexer)) {
                 ASTree t = parser.parse(lexer);
-                if (t.getClass() != ASTList.class || t.ChildrenAmount() > 0)
+                if (t.getClass() != ASTList.class || t.childrenAmount() > 0)
                     res.add(t);
                 if (onlyOnce)
                     break;
@@ -457,7 +457,7 @@ public class Parser {
         return this;
     }
 
-    public Parser option(Parser p) {
+    public Parser optional(Parser p) {
         elements.add(new Repeat(p, true));
         return this;
     }

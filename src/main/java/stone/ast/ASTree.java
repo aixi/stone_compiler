@@ -7,7 +7,7 @@ import java.util.Iterator;
  */
 public abstract class ASTree implements Iterable<ASTree> {
     public abstract ASTree child(int i);
-    public abstract int ChildrenAmount();
+    public abstract int childrenAmount();
     public abstract Iterator<ASTree> getChildren();
     public abstract String location();
 
