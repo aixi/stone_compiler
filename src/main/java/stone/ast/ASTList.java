@@ -19,7 +19,7 @@ public class ASTList extends ASTree {
     }
 
     @Override
-    public int ChildrenAmount() {
+    public int childrenAmount() {
         return children.size();
     }
 

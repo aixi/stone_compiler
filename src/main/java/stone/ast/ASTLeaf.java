@@ -22,7 +22,7 @@ public class ASTLeaf extends ASTree {
     }
 
     @Override
-    public int ChildrenAmount() {
+    public int childrenAmount() {
         return 0;
     }
 
